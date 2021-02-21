@@ -15,8 +15,8 @@
 }
 @include media-xl{
     .App{
-        background: url('../img/bg-pattern-top.svg') -80% 160% no-repeat, 
-        url('../img/bg-pattern-bottom.svg') 160% -120% no-repeat,
+        background: url('../img/bg-pattern-top.svg') -60% 200% no-repeat, 
+        url('../img/bg-pattern-bottom.svg') 150% -140% no-repeat,
         $dark-cyan;
     }
    

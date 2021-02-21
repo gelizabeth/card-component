@@ -31,7 +31,8 @@
             .user__name{
                 margin-top: 5rem;
                 font-weight: 700;
-                font-size: 16px;
+                font-size: 18px;
+                color: $very-desaturated-blue;
                 span{
                     font-weight: 400;
                     color: $dark-grayish-blue;
@@ -55,7 +56,8 @@
             flex-direction: column;
             align-items: center;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 18px;
+            color: $very-desaturated-blue;
             span{
                 color: $dark-gray;
                 font-weight: 400;
@@ -69,6 +71,6 @@
 }
 @include media-xl{
     .card{
-        max-width: 400px;
+        max-width: 350px;
     }
 }
