@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import '../src/scss/App.scss';
+import profileImage from '../src/img/image-victor.jpg';
+import Card from './Card';
+
+const user = {
+  name: 'Victor Crest',
+  age: 26,
+  city: 'London',
+  profileImage: profileImage,
+  followersCount: '80K',
+  likesCount: '803K',
+  photosCount: '1.4K',
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card user={user}></Card>
     </div>
   );
 }

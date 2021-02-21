@@ -1,0 +1,74 @@
+@import './config';
+.card{
+    background: #fff;
+    width: 90%;
+    max-width: 350px;
+    min-width: 337px;
+    // height: 350px;
+    box-shadow: 1px 2px 50px 1px rgba($dark-grayish-blue, 0.5);
+    margin: auto;
+    border-radius: 10px;
+    .card__header{
+        background: url('../img/bg-pattern-card.svg'), rgba(255, 255, 255, 0.514);
+        height: 150px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .card__body{
+        position: relative;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            .user__img{
+                position: absolute;
+                top: -50px;
+                img{
+                    border-radius: 50%;
+                    border: 5px solid white;
+                }
+                
+            }
+            .user__name{
+                margin-top: 5rem;
+                font-weight: 700;
+                font-size: 16px;
+                span{
+                    font-weight: 400;
+                    color: $dark-grayish-blue;
+                }
+            }
+            .user__city{
+                margin: 1rem;
+                color: $dark-grayish-blue;
+            }
+        
+        
+    }
+    .card__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 1px solid rgba($dark-gray, 0.2);
+        padding: 2rem 3rem;
+        .counter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            span{
+                color: $dark-gray;
+                font-weight: 400;
+                font-size: 10px;
+                letter-spacing: 1px;
+                padding-top: 0.5rem;
+            }
+
+        }
+    }
+}
+@include media-xl{
+    .card{
+        max-width: 400px;
+    }
+}
